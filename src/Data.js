@@ -1,35 +1,35 @@
 const Data=[
     {
-        name:"Praveen",
+        name:"Praveen kumar",
         id:1
     },
     {
-        name:"kumar",
+        name:"Amrik singh",
         id:2
     },
     {
-        name:"Praveen",
+        name:"Ankit singh",
         id:3
     },
     {
-        name:"kumar",
+        name:"Mihir soni",
         id:4
     },
     {
-        name:"Praveen",
+        name:"Aaditya verma",
         id:5
     },
     {
-        name:"kumar",
+        name:"Aayushi farande",
         id:6
     },
     {
-        name:"kumar",
-        id:4
+        name:"Aayushi ",
+        id:7
     },
     {
-        name:"Praveen",
-        id:5
+        name:"Isha maru",
+        id:8
     }
 ]
 

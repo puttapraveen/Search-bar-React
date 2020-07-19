@@ -16,3 +16,7 @@
 .cards-list:hover{
     transform: scale(1.05);
   }
+.cards-list h1{
+    font-size: 20px;
+
+}

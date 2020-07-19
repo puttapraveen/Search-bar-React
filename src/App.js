@@ -7,8 +7,15 @@ class App extends Component{
   constructor(){
     super()
     this.state={
-      monsters:[]
+      monsters:[],
+      search:""
     }
+    this.handleChange=this.handleChange.bind(this)
+  }
+  handleChange(event){
+    this.setState({
+        search:event.target.value
+    })
   }
   componentDidMount(){
   this.setState({monsters:Data});
@@ -20,7 +27,7 @@ class App extends Component{
     return(
     <div className="whole">
       <div className="Header">
-        <input type="text" placeholder="Search For Monsters"/>
+        <input type="text" placeholder="Search For Monsters" onChange={this.handleChange}/>
         </div>
         <div className="Cards-show">
           {st}
