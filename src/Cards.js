@@ -1,11 +1,15 @@
 import React from "react"
 import "./Cards.css"
+import Card from "./Card.js"
 
 function Cards(props){
 return(
+    <div className="cardsss">
+    {props.monsters.map(monster=>(
     <div className="cards-list">
-        <img src={'https://robohash.org/${props.id}?set=set2&size=180x180'}/>
-        <h1>{props.name}</h1>
+        <Card key={monster.id} name={monster.name} />
+        </div>
+        ))}
     </div>
 )
 

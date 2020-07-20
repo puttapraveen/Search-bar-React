@@ -1,4 +1,8 @@
+.whole{
 
+  background-color:teal;
+
+}
 .Cards-show{
   margin:20px 20px 20px;
   display: grid;
@@ -10,25 +14,7 @@
 }
 
 
-.cards-list{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 25px;
-  border-radius: 5px;
-  margin: 20px 20px 20px;
-  background-color: #95dada;
-  border: 1px solid grey;
-  backface-visibility: hidden;
-  cursor: pointer;
-  width: 200px;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
-}
-.cards-list:hover{
-  transform: scale(1.05);
-}
+
 .Header{
   display: flex;
   align-items: center;
@@ -42,4 +28,5 @@
   text-align: center;
   width: 300px;
   border-radius: 30px;
+  cursor: pointer;
 }

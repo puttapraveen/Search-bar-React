@@ -1,8 +1,6 @@
 
 .cards-list{
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
+     padding: 25px;
     border-radius: 5px;
     margin: 20px 20px 20px;
     background-color: #95dada;
@@ -18,5 +16,11 @@
   }
 .cards-list h1{
     font-size: 20px;
-
+}
+.cardsss{ 
+     display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)) ;
+    grid-gap: 70px; 
 }

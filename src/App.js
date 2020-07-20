@@ -21,16 +21,16 @@ class App extends Component{
   this.setState({monsters:Data});
   }
   render(){
-    const st=this.state.monsters.map(da=>
-      (<Cards name={da.name} id={da.id}/>)
-      )
+    const {monsters,search}=this.state;
+    const filtered=monsters.filter(mon=>mon.name.toLowerCase().includes(search.toLowerCase()))
+
     return(
     <div className="whole">
       <div className="Header">
-        <input type="text" placeholder="Search For Monsters" onChange={this.handleChange}/>
+        <input type="search" placeholder="Search For Monsters" onChange={this.handleChange}/>
         </div>
         <div className="Cards-show">
-          {st}
+          <Cards monsters={filtered}/>
         </div>
     </div>
     )
